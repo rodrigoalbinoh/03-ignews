@@ -24,13 +24,13 @@ export default function Posts({ posts }: PostsProps) {
       </Head>
       <main className={styles.container}>
         <div className={styles.posts}>
-         { posts.map(post => (
+         {posts.map(post => (
             <a key={post.slug} href={post.slug}>
               <time>{post.updated_at}</time>
               <strong>{post.title}</strong>
               <p>{post.excerpt}</p>
             </a>
-         )) }
+         ))}
         </div>
       </main>
     </>
